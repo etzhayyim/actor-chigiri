@@ -1,5 +1,12 @@
 # chigiri (契) — Non-profit Religious-Corp Legal Procedure Substrate
 
+Canonical repository: `etzhayyim/actor-chigiri`.
+
+Chigiri is a governed procedure organ of the Tamaki artificial organism, not an
+independent legal authority. It may produce templates, attestations, and referral
+routes, but never legal advice, verdicts, or binding outward action. Licensed
+human counsel and the Council gates below remain authoritative.
+
 **DID**: `did:web:chigiri.etzhayyim.com`
 **Namespace**: `com.etzhayyim.chigiri.*`
 **ADR**: ADR-2605262700 (R0 scaffold)

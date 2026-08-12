@@ -1,4 +1,4 @@
-# com-etzhayyim-chigiri — CLAUDE.md
+# actor-chigiri — CLAUDE.md
 
 ## Identity
 
