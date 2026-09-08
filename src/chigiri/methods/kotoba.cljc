@@ -16,7 +16,7 @@
   appends to a local file. G8/G14: the ledger records a REFERRAL registry (where to
   route a member to LICENSED human counsel), NEVER advice and NEVER a verdict;
   :verification-status is preserved verbatim (all seed entries :unverified-seed)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])

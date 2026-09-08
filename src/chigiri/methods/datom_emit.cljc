@@ -14,7 +14,7 @@
   G8/G14: this is a REFERRAL registry projection — a map of where to route a consenting
   member to LICENSED human counsel, NEVER advice and NEVER a verdict. :verification-status
   is preserved verbatim (every seed entry is :unverified-seed; emission never upgrades it)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [chigiri.methods.registry :as reg]))
 
 (defn fmt
