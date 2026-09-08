@@ -1,6 +1,6 @@
 (ns chigiri.registry-seed-test
   (:require [clojure.edn :as edn]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]))
 
 (def seed-path "registry/legal-aid.seed.edn")
@@ -33,9 +33,9 @@
 
 (deftest entries-reassert-the-upl-boundary
   (doseq [referral referrals]
-    (let [notes (str/lower-case (get referral "notes" ""))]
+    (let [notes (str/lower (get referral "notes" ""))]
       (is (str/includes? notes "upl") (get referral "referralId"))
       (is (str/includes? notes "no legal advice") (get referral "referralId"))))
-  (let [corpus (str/lower-case (slurp seed-path))]
+  (let [corpus (str/lower (slurp seed-path))]
     (doseq [token ["upl" "referral" "no legal advice" "zero compensation"]]
       (is (str/includes? corpus token) token))))

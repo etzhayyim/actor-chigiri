@@ -6,7 +6,7 @@
             [chigiri.methods.datom-emit :as de]
             [chigiri.methods.kotoba :as k]
             [chigiri.methods.autorun :as auto]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]))
 
