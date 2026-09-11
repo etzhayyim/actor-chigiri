@@ -182,7 +182,7 @@ FLIC example-only).
 
 ## Machine-enforced floor
 
-`test/chigiri/registry_seed_test.clj` (the fail-closed
+`test/chigiri/registry_seed_test.cljk` (the fail-closed
 registry-invariants test, R0-safe: test-only, network-free, no cell execution)
 pins the constitutional properties of `legal-aid.seed.edn` so a later refactor
 cannot silently weaken them:

@@ -125,4 +125,4 @@ toritsugi(行政手続き)がカバーするが chigiri に欠けていた 2 法
 root-only CLJC、social cell、11 lexicon、71件/52法域の legal-aid registry と
 Python audit を本 repository に統合。manifest/lexicon/registry は EDN を正規形、
 JSON/JSON-LD は `wire/` の外部表現とした。actor/root/Kototama 依存は exact SHA
-で固定し、shell runner を廃止して `run_tests.clj` に統一した。
+で固定し、shell runner を廃止して `run_tests.cljk` に統一した。
