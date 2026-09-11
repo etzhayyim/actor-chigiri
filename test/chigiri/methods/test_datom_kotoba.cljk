@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; chigiri 契 — datom-emit + referral-registry-ledger persistence/heartbeat tests.
 ;; Run through repository-local run_tests.cljk.
 (ns chigiri.methods.test-datom-kotoba
