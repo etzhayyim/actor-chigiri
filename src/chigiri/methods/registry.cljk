@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; chigiri 契 — legal-aid REFERRAL registry loader (canonical EDN seed → normalized maps).
 (ns chigiri.methods.registry
   "registry.cljc — chigiri 契 referral-registry loader.
@@ -48,7 +48,7 @@
 #?(:clj
    (def ^:private here-dir
      ;; captured at namespace-LOAD time (sci rebinds *file* to the caller / -e expr at
-     ;; call time) — robust under the bb -e suite runner. Actor root = src/chigiri/methods/../../../.
+     ;; call time) — robust under the kbb -e suite runner. Actor root = src/chigiri/methods/../../../.
      (-> *file* io/file .getCanonicalFile .getParentFile .getParentFile .getParentFile .getParentFile)))
 
 #?(:clj

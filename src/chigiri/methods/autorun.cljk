@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; chigiri 契 — autonomous heartbeat: load referral registry → append GROUND datoms.
 (ns chigiri.methods.autorun
   "autorun.cljc — chigiri 契 deterministic heartbeat (ADR-2605262700, tate/hinagata pattern).

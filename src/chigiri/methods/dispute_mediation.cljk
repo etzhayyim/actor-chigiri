@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; chigiri 契 — G10 Mediation-First Rule: real computed-logic validator (iteration #9 of
 ;; the etzhayyim design+implementation loop; ADR-2605262700 R0 scaffold, disputeMediation
 ;; lexicon under com.etzhayyim.chigiri.*).
