@@ -7,7 +7,7 @@
             [chigiri.methods.kotoba :as k]
             [chigiri.methods.autorun :as auto]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is run-tests]]
+            [kotoba.test :refer [deftest is run-tests]]
             [clojure.java.io :as io]))
 
 (defn- tmp [] (str (System/getProperty "java.io.tmpdir") "/chigiri-ledger-test-" (gensym) ".edn"))

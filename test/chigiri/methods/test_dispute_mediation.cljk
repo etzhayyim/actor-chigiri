@@ -6,7 +6,7 @@
 ;; kind appears anywhere in this file (this is inherently sensitive subject matter —
 ;; see chigiri's own G14/UPL invariant).
 (ns chigiri.methods.test-dispute-mediation
-  (:require [clojure.test :refer [deftest is run-tests]]
+  (:require [kotoba.test :refer [deftest is run-tests]]
             [chigiri.methods.dispute-mediation :as dm]))
 
 ;; ── synthetic fixture builder — a baseline compliant "still mediating" record,
