@@ -1,6 +1,6 @@
 (ns chigiri.repository-contract-test
   (:require [kotoba.lang.edn :as edn]
-            [clojure.java.io :as io]
+            [kotoba.io :as io]
             [kotoba.test :refer [deftest is]]))
 
 (defn read-edn [path] (edn/read-string (slurp path)))
@@ -13,14 +13,14 @@
     (is (= "chigiri" (:identity/actor identity)))
     (is (= "chigiri" (get manifest "name")))
     (doseq [legacy (:repository/legacy-artifacts-forbidden contract)]
-      (is (not (.exists (io/file legacy))) (str legacy " must stay pruned")))))
+      (is (not (io/exists? (io/file legacy))) (str legacy " must stay pruned")))))
 
 (deftest actor-owned-data-is-edn-canonical
-  (let [lexicons (filter #(and (.isFile %) (.endsWith (.getName %) ".edn"))
-                         (file-seq (io/file "lex")))]
+  (let [lexicons (filter #(and (io/file? %) (.endsWith (io/file-name %) ".edn"))
+                         (io/file-seq (io/file "lex")))]
     (is (= 11 (count lexicons)))
     (doseq [lexicon lexicons]
-      (is (map? (read-edn (.getPath lexicon))) (.getPath lexicon))))
+      (is (map? (read-edn (io/path lexicon))) (io/path lexicon))))
   (is (map? (read-edn "registry/legal-aid.seed.edn"))))
 
 (deftest dependencies-are-reproducibly-pinned
