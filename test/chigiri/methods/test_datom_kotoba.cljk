@@ -8,7 +8,7 @@
             [chigiri.methods.autorun :as auto]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is run-tests]]
-            [clojure.java.io :as io]))
+            [kotoba.io :as io]))
 
 (defn- tmp [] (str (System/getProperty "java.io.tmpdir") "/chigiri-ledger-test-" (gensym) ".edn"))
 (defn- d1 [] [(k/add "referral:jp-houterasu-legal-aid" ":referral/jurisdiction" "jpn")
