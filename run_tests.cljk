@@ -1,4 +1,4 @@
-(require '[clojure.test :as t])
+(require '[kotoba.test :as t])
 
 (doseq [ns-sym '[chigiri.methods.test-charter-gates
                   chigiri.methods.test-datom-kotoba
