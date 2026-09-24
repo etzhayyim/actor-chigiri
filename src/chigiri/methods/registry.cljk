@@ -13,7 +13,7 @@
   ROUTED — a referral TARGET, never an advice source. chigiri renders NO legal advice
   (UPL). All seed entries are :unverified-seed; the loader preserves that status
   verbatim (it never upgrades verification)."
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
 
 ;; entry id → entity id (content-stable)
