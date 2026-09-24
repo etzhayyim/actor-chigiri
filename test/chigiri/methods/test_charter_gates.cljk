@@ -2,7 +2,7 @@
   "chigiri — constitutional-gate conformance tests (manifest + actor-owned lexicons).
   Substrate-native Clojure (ADR-2606160842). 1:1 port of the pruned methods/test_charter_gates.py."
   (:require [kotoba.test :refer [deftest is run-tests]]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             [clojure.set :as set]
             ))
 
